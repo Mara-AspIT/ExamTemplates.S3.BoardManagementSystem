@@ -1,0 +1,55 @@
+﻿<Window x:Class="Client.UI.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.UI"
+        mc:Ignorable="d"
+        Title="Board Management System - Login"
+        Height="170"
+        Width="474">
+    <Grid>
+        <Label x:Name="usernameLabel"
+               Content="Username:"
+               HorizontalAlignment="Left"
+               Margin="32,25,0,0"
+               VerticalAlignment="Top"
+               Width="65" />
+        <TextBox x:Name="usernameTextBox"
+                 HorizontalAlignment="Left"
+                 Height="20"
+                 Margin="97,29,0,0"
+                 TextWrapping="Wrap"
+                 Text=""
+                 VerticalAlignment="Top"
+                 Width="210"
+                 TextChanged="UsernameTextBox_TextChanged" />
+        <PasswordBox x:Name="passwordBox"
+                     HorizontalAlignment="Left"
+                     Margin="97,58,0,0"
+                     VerticalAlignment="Top"
+                     Width="210"
+                     PasswordChanged="PasswordBox_PasswordChanged" />
+        <Label x:Name="passwordLabel"
+               Content="Password:"
+               HorizontalAlignment="Left"
+               Margin="32,54,0,0"
+               VerticalAlignment="Top"
+               Width="65" />
+        <Label x:Name="errorMessageLabel"
+               Content=""
+               HorizontalAlignment="Left"
+               Margin="32,85,0,0"
+               VerticalAlignment="Top"
+               Width="275" />
+        <Button x:Name="logInButton"
+                Content="Login"
+                HorizontalAlignment="Left"
+                Margin="319,29,0,0"
+                VerticalAlignment="Top"
+                Width="97"
+                Height="47"
+                Click="LogInButton_Click" />
+
+    </Grid>
+</Window>
