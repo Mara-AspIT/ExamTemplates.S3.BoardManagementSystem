@@ -15,4 +15,4 @@ namespace Client.UI
 			label.Content = $"Welcome, {user.Username}.";
 		}
 	}
-}
+}//
