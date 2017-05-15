@@ -15,7 +15,7 @@ namespace Server.Services
 	{
 		#region Methods
 		/// <summary>
-		/// The main entry point of the server program. 
+		/// The main entry point of the server program. There can be only one main method in a program.
 		/// </summary>
 		/// <param name="args">Correct args info will restart the server from a monitoring application.</param>
 		public static void Main( string[] args )
